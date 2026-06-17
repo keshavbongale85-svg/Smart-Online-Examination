@@ -1,0 +1,35 @@
+# ===== Dependencies =====
+node_modules/
+**/node_modules/
+
+# ===== Secrets / env =====
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# ===== Local DB (in-process MongoDB data) =====
+.localdb/
+backend/.localdb/
+
+# ===== Uploads (user-generated, do not commit) =====
+uploads/
+backend/uploads/
+
+# ===== Build output =====
+dist/
+frontend/dist/
+build/
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
